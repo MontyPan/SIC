@@ -2,10 +2,12 @@ package us.dontcareabout.sic.client;
 
 import com.google.gwt.user.client.Window;
 
-import us.dontcareabout.gwt.client.GFEP;
+import us.dontcareabout.gst.client.GSTEP;
 
-public class SICEP extends GFEP {
-	public SICEP() {}
+public class SICEP extends GSTEP {
+	public SICEP() {
+		super("SIP-Key", "1NeArA5qG-OsBNvj82Z7bmkbXhul8SwdfTMxWZ_Oqa1E");
+	}
 
 	@Override
 	protected String version() { return "0.0.1"; }
