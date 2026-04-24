@@ -30,6 +30,9 @@ public class MetadataGrid extends Grid2<Metadata> {
 
 	public MetadataGrid() {
 		init();
+		getSelectionModel().addSelectionHandler(e -> {
+			UiCenter.change(e.getSelectedItem());
+		});
 	}
 
 	@Override
