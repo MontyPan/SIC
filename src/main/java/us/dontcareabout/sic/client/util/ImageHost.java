@@ -8,8 +8,8 @@ public class ImageHost {
 	public static final String TOC = "/toc";
 	public static final String PAGE = "/page";
 
-	public static String toc(int serial) {
-		return HOST + TOC + "/" + serial + ".jpg";
+	public static String toc(int serial, int index) {
+		return HOST + TOC + "/" + serial + "-" + index + ".jpg";
 	}
 
 	public static String page(Metadata md, int index) {
